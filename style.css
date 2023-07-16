@@ -4,9 +4,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-/* html {
+html {
   font-size: 62.5%;
-} */
+}
 /* header section starts */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -22,19 +22,19 @@ nav {
 nav h3 {
   color: #131313;
 
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 nav ul {
   display: flex;
 }
 nav ul li {
   list-style: none;
-  margin-right: 35px;
+  margin-right: 3.5rem;
 }
 nav ul li a {
   text-decoration: none;
   color: #424242;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* nav section ends */
 
@@ -45,29 +45,30 @@ nav ul li a {
 }
 .banner-text h1 {
   color: #131313;
-  font-size: 54px;
+  font-size: 5.4rem;
   font-weight: 700;
 }
 .banner-text p {
   color: #727272;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 .banner-text button {
-  border-radius: 8px;
+  border-radius: 0.8rem;
   background: #ff900e;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   border: none;
-  padding: 12px 20px;
-  margin-top: 15px;
+  padding: 1.2rem 2rem;
+  margin-top: 1.5rem;
 }
 .banner-pic img {
-  width: 1100px;
+  /* width: 101rem; */
+  width: 100%;
   height: auto;
-  margin-top: 50px;
+  padding: 5rem 15rem;
 }
 /* banner sec end */
 
@@ -80,4 +81,15 @@ nav ul li a {
 /* footer section ends */
 
 /* responsive section start */
+@media screen and (max-width: 576px) {
+  nav ul {
+    display: none;
+  }
+  .banner-pic img {
+    padding: 5rem 1rem;
+  }
+  .banner-text {
+    padding: 5rem 2rem;
+  }
+}
 /* responsive section end */
